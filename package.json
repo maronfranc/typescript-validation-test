@@ -1,0 +1,27 @@
+{
+  "name": "validation-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.1",
+    "ts-jest": "^26.4.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "bail": true,
+    "errorOnDeprecated": false,
+    "verbose": true,
+    "notify": true,
+    "notifyMode": "always"
+  }
+}

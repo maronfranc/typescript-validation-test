@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "commonjs",
+        "declaration": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "noLib": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "incremental": true,
+        "target": "es2020",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "importHelpers": true,
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "downlevelIteration": true,
+        "allowJs": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "diagnostics": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "strictBindCallApply": true,
+        "noFallthroughCasesInSwitch": true,
+        "noErrorTruncation": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": false
+    }
+}

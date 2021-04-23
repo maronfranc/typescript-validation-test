@@ -1,4 +1,4 @@
-import { isEmptyString, isNegativeNumber, isNegativeOrZeroNumber, isNil, isNotEmptyString, isNotNil } from "./validationCheck";
+import { isEmptyObject, isEmptyString, isNegativeNumber, isNegativeOrZeroNumber, isNil, isNotEmptyString, isNotNil } from "./validationCheck";
 
 
 interface ITestObj {
@@ -134,5 +134,13 @@ describe("Validation check", () => {
         expect(isNegativeOrZeroNumber(0)).toBe(true);
         expect(isNegativeOrZeroNumber(1)).toBe(false);
         expect(isNegativeNumber(NaN)).toBe(false);
+    });
+
+    it("isEmptyObject", () => {
+        expect(isEmptyObject(undefined)).toBe(true);
+        expect(isEmptyObject(null)).toBe(true);
+        expect(isEmptyObject({})).toBe(true);
+        expect(isEmptyObject({ id: 1 })).toBe(false);
+        expect(isEmptyObject({ objObj: {} })).toBe(false);
     });
 });
